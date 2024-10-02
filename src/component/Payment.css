@@ -51,11 +51,11 @@
   }
   
   .payment-full-div{
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98vh;
+    height: 100%;
     width: 100%;
   }
   .payment-content-div{
@@ -123,5 +123,9 @@
       }
       .payment-content-heading{
         width: 98%;
+      }
+      .payment-full-div{
+        /* background-color: aqua; */
+        height: 100vh;
       }
     }
