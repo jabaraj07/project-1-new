@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .content{
+    /* background-color: blue; */
+    height: 480px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-container {
+    /* background-color: rebeccapurple; */
+    position: relative;
+    margin: 20px 0px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .input-container input[type="text"],
+  .input-container input[type="number"] {
+    width: 100%;
+    padding: 10px 10px;
+    height: 120%;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.5s ease;
+  }
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 5px;
+    color: #888;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  .input-container input:focus + label,
+  .input-container label.active {
+    top: -15px;
+    left: 15px;
+    font-size: 15px;
+    color: rgb(3, 3, 3);
+    font-weight: bolder;
+  }
+  
+  .payment-full-div{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .payment-content-div{
+    width: 450px;
+    height: 550px;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 20px 0px;
+  }
+  .payment-content-heading{
+    text-align: center;
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 10px 0;
+    font-size: 25px;
+  }
+  .payment-content-form-div{
+    width: 400px;
+    height: 500px;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .payment-content-form input{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 7px;
+    border-style:none ;
+    margin: 10px 0;
+    /* margin-bottom: 10px; */
+  }
+     .select-div{
+      /* background-color: cadetblue; */
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+     }
+    .select-div>select{
+      width: 100%;
+      /* background-color: burlywood; */
+      height: 50px;
+      font-size: 13px;
+      /* margin: 5px 0px; */
+      border-radius: 7px;
+    }
+    @media screen and (max-width:480px) {
+      .payment-content-div{
+        width: 330px;
+        height: 570px;
+        background-color: lightgreen;
+        border-radius: 5px;
+        margin: 20px 0px;
+      }
+      .payment-content-form-div{
+        width: 330px;
+        height: 500px;
+        /* background-color: lightcoral; */
+      }
+      .payment-content-heading{
+        width: 98%;
+      }
+    }

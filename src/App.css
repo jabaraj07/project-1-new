@@ -1,38 +1,184 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+.Product-full-div{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.product-content-div{
+  background-color: gray;
+  width: 300px;
+  height: 320px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: 1s ease-out;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 15px 5px;
+}
+.product-content-title{
+  height: 55px;
+}
+.product-content-div:hover{
+  transform: translateY(-10px);
+}
+.product-content-div > button {
+  margin-top: 10px;
+}
+.cart-full-div{
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 20px; */
+  position: sticky;
+  align-items: center;
+  height: 60px;
+  top: 60px;
+  /* z-index: 1; */
+  background-color: aqua;
+  position: sticky;
+  
+}
+.cart-product-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  flex: 1; */
+}
+.cart-content-div{
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 10px;
+  transition: 1s ease-out;
+}
+/* .cart-content-div:hover{
+  transform: translateY(-10px);
+} */
+.cart-content-div > img {
+  width: 150px;
+  height: 150px;
+  margin: 5px 0px; 
+}
+.cart-content-div > button{
+  margin-top: 10px;
+}
+.cart-content-title{
+  height: 40px;
+  /* background-color: rebeccapurple; */
+}
+.cart-to-home{
+  color: orange;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size:x-large;
+}
+.cart-empty-div{
+/* background-color: aqua; */
+width: 100%;
+}
+.cart-empty-div-content{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+  .opt-full-div{
+      /* background-color: bisque; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  .otp-content-div{
+      width: 500px;
+      height: 500px;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 15px;
+  }
+  .otp-btn-div{
+      display: flex;
+      margin: 25px 0px;
+  }
+  .otp-btn-div > button{
+      margin: 0px 10px;
+  }
+  
+  .Navigation-ul{
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      height: 50px;
+      margin: 0px;
+      padding: 0px;
+  }
+  .Forgotpassword-form{
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0.9, 0.5);
+      background-color: #f9f9f9;
+      /* margin-top: 15%; */
+  }
+  .Forgotpassword-form > h1{
+      text-align: center;
+      columns: #333;
+  }
+  .Forgotpassword-form >input{
+      width: 95%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  .Forgotpassword-form >button{
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50; 
+      color: white; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+button:disabled{
+  background-color: rgb(250, 250, 250);
+  color: grey;
+  cursor: no-drop;
+}
+  
+@media screen and (max-width:520px) {
+  .otp-content-div{
+    width: 330px;
+    height: 555px;
   }
 }
+

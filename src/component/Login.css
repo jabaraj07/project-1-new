@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Login-form{
+    display: flex;
+    flex-direction: column;
+}
+.Login-form-div{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.Login-form>input{
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0px;
+    padding: 7px 0px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.Login-form label{
+    font-size: 20px;
+}
+.Login-form>button{
+    width: 300px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.Login-form>button:hover{
+    background-color: rgb(38, 38, 137);
+}
+.Login-full-div{
+    /* background-color: lightgoldenrodyellow; */
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login-content-full-div{
+    width: 380px;
+    height: 350px;
+    background-color: lightsalmon;
+    border-radius: 8px;
+}
+.Login-Link:hover{
+    text-decoration: underline;
+}
+.Link-div{
+    text-align: center;
+}
+.Link-div span{
+    font-size: 18px;
+}
+@media screen and (max-width:400px) {
+    .Login-content-full-div{
+        width: 320px;
+    }
+    
+}
+
+/* .Form-container-full-div{
+    width: 100%;
+    background-color: aqua;
+    height: 100vh;
+}
+.Form-container-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.Form-container{
+    width: 400px;
+    height: 350px;
+    background-color: lightpink;
+    border-radius: 5%;
+}
+.Form-container-tab{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.login-head,.signup-head{
+    color: green;
+    position: relative;
+    border-bottom: 5px solid black;
+    width: 100%;
+}
+.login-head.active{
+    border-bottom: 5px solid rgb(241, 5, 5);
+}
+.signup-head.active{
+    border-bottom: 5px solid rgb(241, 5, 5);
+}
+.login-Content{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+} */

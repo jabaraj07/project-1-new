@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.signup-full-div{
+    /* background-color: lightpink; */
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-content-full-div{
+    width: 330px;
+    height: 400px;
+    background-color: rgba(226, 249, 92, 0.868);
+    border-radius: 10px;
+}
+.signup-form-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 300px;
+}
+.signup-form{
+    display: flex;
+    flex-direction: column;
+}
+.signup-form>input{
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px 0px;
+    padding: 7px 0;
+    font-size: 16px;
+    font-weight:600;
+}
+.signup-form label{
+    font-size: 16px;
+    font-weight:600;
+}
+.signup-form>button{
+    width: 300px;
+    margin-top: 15px;
+    height: 40px;
+    font-size: 15px;
+}
+.signup-form>button:hover{
+    background-color: rgb(49, 49, 157);
+}
+.Weak-Password{
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.Strong{
+    color: green;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.Medium{
+    color: rgb(111, 0, 255);
+    font-size: 15px;
+    font-weight: bolder;
+}
+@media screen and (max-width:380px) {
+    .signup-content-full-div{
+        width: 325px;
+    }
+}
