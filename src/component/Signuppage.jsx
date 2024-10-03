@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Await, useNavigate } from "react-router-dom";
+import { Await, Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import './Signup.css'
 import { ProductContext } from "../App";
@@ -120,6 +120,9 @@ const Signuppage = ({nav1}) => {
               {error && <h2 className={`${error}`}>{error}</h2>}
             <button type="submit">Signup</button>
 
+            <div style={{display:"flex",justifyContent:"center",padding:10,fontSize:16}}>
+            <p>Already Have Account ? <span> <Link to="/Login" style={{textDecoration:"none"}}>Login</Link> </span></p>
+            </div>
             </form>
 
           </div>

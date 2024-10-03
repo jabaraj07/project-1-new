@@ -40,7 +40,7 @@ const Navbar = () => {
           </>  
           : 
           <>
-          <div className='Logout-navigation-full-div' >
+          {/* <div className='Logout-navigation-full-div' >
 
           <h1 style={{color:"white"}}>Fake Store</h1>
 
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <span className="bar1"></span>
           </div>
 
-          </div>
+          </div> */}
           </>
           }
     </div>
